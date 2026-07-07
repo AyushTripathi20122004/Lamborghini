@@ -12,7 +12,7 @@ const App = () => {
     <div className='relative [max-w-[1400px]'>
       <Nav  />
       <Routes >
-        <Route index element={<Home />}/>
+        <Route path='/' element={<Home />}/>
         <Route path='/Menu' element={<Menu />} />
         <Route path='*' element={<Page404 />} />
         <Route path='/Search' element={<Searchpage />} />
