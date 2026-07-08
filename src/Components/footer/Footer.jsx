@@ -4,7 +4,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 const Footer = () => {
   return (
     <div className='flex flex-col gap-6 px-20 text-2xl bg-black  text-white py-10'>
-      <div className='flex  justify-between' >
+      <div className='flex flex-wrap  justify-between' >
         <div className='flex flex-col gap-6 py-20'>
             <span><a href="http://">Company</a></span>
             <span><a href="http://">Sustainability</a></span>

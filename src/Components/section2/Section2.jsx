@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Section2 = () => {
   return (
-    <div className='Section2 bg-white p-20 flex flex-col overflow-hidden gap-10 '>
+    <div className='Section2 bg-white py-20 lg:px-20 px-4 md:px-20 flex flex-col overflow-hidden gap-10 '>
       <Sec2Header />
       <Sec2Cards />
     </div>

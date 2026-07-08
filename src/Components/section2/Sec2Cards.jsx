@@ -42,10 +42,10 @@ const Sec2Cards = () => {
     let [RightBtn , setRightbtn]=useState('');
 
   return (
-    <div className='relative'>
+    <div className='relative lg:overflow-visible md:overflow-visible overflow-x-auto'>
 
         {/* Card scrolling btns */}
-        <div className=' z-[5] absolute top-[30%] flex w-full justify-between'>
+        <div className=' lg:flex md:flex hidden z-[5] absolute top-[30%]  w-full justify-between'>
             <button 
             onClick={()=>{
                 if(CardIndex>0){
@@ -67,38 +67,38 @@ const Sec2Cards = () => {
             </button>
         </div>
         {/* cards */}
-        <div style={{ transform: `translateX(-${CardIndex*80}%)` }} className={` transition-all duration-200 cards  pl-28 grid  grid-flow-col items-center   `}>
+        <div style={{ transform: `translateX(-${CardIndex*80}%)` }} className={` transition-all duration-200 cards  lg:pl-20 md:pl-28 grid  grid-flow-col gap-4 items-center   `}>
             {
                CardData.map((elem,idx)=>{
                 return(
-                    <div key={idx} className='card min-w-[60rem]  flex flex-col items-center'>
+                    <div key={idx} className='card lg:min-w-[60rem] min-w-screen md:min-w-[60rem]  flex flex-col items-center'>
                         <div className='cardHeader flex flex-col items-center'>
                             {/* model name */}
-                            <div className=''>
+                            <div className='lg:w-full md:w-full w-1/2'>
                                 <img className='h-full w-full object-cover' src={elem.ModelNameImage} alt="" srcset="" />
                             </div>
                             {/* qoute */}
-                            <p className='text-8xl text-black/50'>{elem.Qoute}</p>
+                            <p className='lg:text-8xl md:text-8xl text-4xl text-black/50'>{elem.Qoute}</p>
                         </div>
                         {/* car model image */}
                         <div className='ModelImage  w-full'>
                             <img src={elem.ModelImage} className='h-full w-full object-cover' alt="" srcset="" />
                         </div>
 
-                        <div className='mt-20 flex gap-4 max-w-[20rem]  justify-center '>
+                        <div className='mt-20  flex lg:flex-row md:flex-row flex-col gap-4 lg:min-w-[90rem] w-[25rem] md:min-w-[90rem]  justify-center '>
                             <div>
-                                <button className='bg-[#917300] text-white uppercase flex justify-between items-center text-lg h-16 w-48 p-6'>
+                                <button className='bg-[#917300] text-white uppercase w-full flex justify-between items-center text-lg h-16 w-48 p-6'>
                                     Explore the Model <ArrowRight />
                                 </button>
                             </div>
                             <div>
-                                <button className=' border-b border-black  uppercase flex justify-between items-center text-lg h-16 w-56 p-6'>
+                                <button className=' border-b border-black  uppercase  w-full flex justify-between items-center text-lg h-16 w-56 p-6'>
                                     Start CONFIGURATON
                                     <svg aria-hidden="true" class="icon light" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 1.94702L3 6.18302V17.817L12 22.053L21 17.817V6.18302L12 1.94702ZM12.5 20.712V18H11.5V20.712L4 17.182V7.28902L6.002 8.23102L6.427 7.32602L4.675 6.50002L12 3.05302L19.325 6.50002L17.573 7.32502L17.999 8.23002L20 7.28802V17.183L12.5 20.712ZM14.927 9.67502L12.5 10.817V14H11.5V10.817L9.073 9.67502L9.499 8.77002L12 9.94702L14.502 8.77002L14.927 9.67502Z" fill="currentColor"></path></svg>
                                 </button>
                             </div>
                             <div>
-                                <button className=' uppercase flex justify-between items-center text-lg h-16 w-48 p-6'>
+                                <button className=' uppercase w-full flex justify-between items-center text-lg h-16 w-48 p-6'>
                                     Explore the Model
                                     <svg aria-hidden="true" class="icon light" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 5V19H22V5H2ZM8.5 13.207L9.293 14H14.707L15.5 13.207L20.293 18H3.707L8.5 13.207ZM3 17.293V7.707L7.793 12.5L3 17.293ZM16.207 12.5L21 7.707V17.293L16.207 12.5ZM21 6V6.293L14.293 13H9.707L3 6.293V6H21Z" fill="currentColor" stroke="currentColor" stroke-width="0.4"></path></svg>
                                 </button>
