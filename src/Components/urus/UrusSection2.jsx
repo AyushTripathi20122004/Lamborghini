@@ -4,7 +4,7 @@ const UrusSection2 = () => {
   return (
     <div className=' py-20 flex flex-col items-center justify-center bg-[#181818]'>
         <div className='px-20 flex gap-6 flex-col'>
-            {/* image */}
+            {/* urus logo image  */}
             <div className='flex items-center justify-center'>
                 <img className='h-[4rem]' src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/0_facelift_2025/loghi/urus/urus_se_performante/Model%3DUrus%20SE%20Performante%2C%20Alignment%3DCenter%2C%20Breakpoint%3DDesktop-dark.svg" alt="" srcset="" />
             </div>
