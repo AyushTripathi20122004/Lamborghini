@@ -1,19 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import UrusSection1 from './UrusSection1'
+import UrusSection2 from './UrusSection2'
 
 const Urus = () => {
-  return (
+  return(
     <div>
-        {/* presentation of the urus */}
-        <div className='h-full w-full relative'>
-            <div>
-                
-            </div>
-
-        </div>
-
-
-
-
+      <UrusSection1 />
+      <UrusSection2 />
     </div>
   )
 }

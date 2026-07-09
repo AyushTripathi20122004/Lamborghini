@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
-    <div className=' bg-black/30 navbar lg:px-20 px-4 md:px-20 fixed w-screen top-0  z-[99]  backdrop-blur-xl flex justify-between items-center py-2  text-white'>
+    <div className=' bg-black/30 navbar lg:px-20 px-4 md:px-20  w-screen fixed top-0  z-[99]  backdrop-blur-xl flex justify-between items-center py-2  text-white'>
         {/* menu button */}
       <div >
         <Link to='/Menu' className='flex gap-2 text-lg items-center'>

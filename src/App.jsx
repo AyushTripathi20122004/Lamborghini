@@ -7,10 +7,23 @@ import Page404 from './Components/404Page/Page404'
 import Searchpage from './Components/searchBar/Searchpage'
 import Footer from './Components/footer/Footer'
 import Urus from './Components/urus/Urus'
+import Lenis from 'lenis'
 
 const App = () => {
+    // smooth scrolling 
+    // Initialize Lenis
+  const lenis = new Lenis();
+
+  // Use requestAnimationFrame to continuously update the scroll
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
+  
   return (
-    <div className='relative flex flex-col [max-w-[1400px]'>
+    <div className='relative flex flex-col bg-black [max-w-[1400px]'>
       <Nav  />
       <Routes >
         <Route path='/' element={<Home />}/>

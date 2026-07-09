@@ -8,10 +8,10 @@ const Intro = () => {
   return (
     <div className='h-screen  relative '>
         {/* image */}
-        <img className='h-full w-full object-cover object-center lg:scale-100 md:scale-100 opacity-70' src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/homepage/2026/slider/urus_se_performante/01_07/hero1-desktop.png" alt="" />
+        <img className='h-full w-full object-cover object-center  opacity-70' src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/homepage/2026/slider/urus_se_performante/01_07/hero1-desktop.png" alt="" />
         
         {/* text over the image */}
-        <div className=' absolute top-32 flex items-center h-full w-full '>
+        <div className=' absolute top-[22vh] flex items-center h-full w-full '>
 
             <div className=' lg:px-20 px-4 md:px-20  gap-10 grid lg:grid-cols-2  md:grid-cols-2 w-full  items-end justify-between '>
                 <div className='text-white w-full '>
