@@ -9,8 +9,8 @@ const Section5 = () => {
     // trnlate x
     const [TranslateX,SetTranslateX]=useState(0)
   return (
-    <div className=' flex items-center justify-center mt-20 mb-20 bg-white '>
-      <div className='w-[75rem] overflow-hidden'>
+    <div className=' flex items-center justify-center pb-20    bg-white '>
+      <div className='w-[75rem] flex flex-col justify-between overflow-hidden'>
         <NewsCards Len={setLen} TranslateX={TranslateX} />
         <div className='flex justify-center gap-4 mt-10'>
             {Array.from({ length: CardLength }).map((_, index) => {

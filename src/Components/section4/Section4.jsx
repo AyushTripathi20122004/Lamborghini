@@ -3,7 +3,7 @@ import React from 'react'
 
 const Section4 = () => {
   return (
-    <div className=' flex justify-center mt-10 bg-white'>
+    <div className=' flex justify-center py-20 bg-white'>
         <div className='max-w-[75%]'>
             <div className='flex mb-10 justify-between items-center'>
                 <h1 className='text-6xl'>News Lamborghini world</h1>

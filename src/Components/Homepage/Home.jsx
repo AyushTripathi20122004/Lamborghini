@@ -9,7 +9,7 @@ import Section5 from '../section5/Section5'
 
 const Home = () => {
   return (
-    <div className='flex flex-col gap-2 relative'>
+    <div className='flex flex-col  relative'>
         <Section1 />
         <Section2 />
         <Section3 />
